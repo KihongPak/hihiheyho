@@ -1,7 +1,6 @@
-body {
-    margin:0px 10px 0px 0px;
-  }
-  #active {
+body {margin:0px 10px 0px 0px;}
+
+#active {
     color:red;
   }
   a {
@@ -16,6 +15,16 @@ body {
     padding: 5px 0px 15px 0px;
     background-color: lemonchiffon;
   }
+/*
+li a {
+    display: block;
+    margin-bottom: 5px;
+}
+li a:hover {
+    background-color:blueviolet;
+    color: white;
+}
+*/
   #grid {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -23,7 +32,7 @@ body {
   #grid ol {
     border-right: 2px gray solid;
     margin:0;
-    padding: 20px;
+    padding: 15px 0px 5px 45px;
     padding-left: 45px;
     width:100px;
     font-size: 25px;
@@ -61,3 +70,41 @@ body {
       background-color: aliceblue;
     }
   }
+
+.dropdown1, .dropdown2, .dropdown3, .dropdown4, .dropdown5{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-button {
+    display: inline-block;
+    border: none;
+    width: 100px;
+    margin-bottom: 5px;
+}
+.dropdown-content {
+    display: none;
+    position:absolute;
+    top: 0px;
+    left: 100px;
+    background-color: white;
+    min-width: 75px;
+    padding: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: blue;}
+.dropdown1:hover .dropdown-content {display:block;}
+.dropdown1:hover .dropdown-button {background-color: red;}
+.dropdown2:hover .dropdown-content {display:block;}
+.dropdown2:hover .dropdown-button {background-color: red;}
+.dropdown3:hover .dropdown-content {display:block;}
+.dropdown3:hover .dropdown-button {background-color: red;}
+.dropdown4:hover .dropdown-content {display:block;}
+.dropdown4:hover .dropdown-button {background-color: red;}
+.dropdown5:hover .dropdown-content {display:block;}
+.dropdown5:hover .dropdown-button {background-color: red;}
